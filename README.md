@@ -1,0 +1,2 @@
+# sqs
+create sqs repos
