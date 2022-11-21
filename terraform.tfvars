@@ -1,0 +1,11 @@
+
+queue_names = ["uat-notification-service_p.fifo", "generic_sms_sender_que_p.fifo", "generic_email_sender_que_p.fifo", "generic_whatsapp_sender_que_p.fifo", "generic_push_notification_que.fifo", "generic_update_data_que_p.fifo", "generic_sms_webhook_que.fifo"]
+fifo_queue = [ true, true, true, true, true, true, true]
+fifo_throughput_limit = ["perQueue", "perQueue", "perQueue", "perQueue", "perQueue", "perQueue", "perQueue"]
+delay_seconds = [ 0, 0, 0, 0, 0, 0, 0]
+max_message_size = [262144, 262144, 262144, 262144, 262144, 262144, 262144]
+message_retention_seconds = [86400, 86400, 86400, 86400, 345600, 86400, 345600]
+receive_wait_time_seconds = [0, 0, 0, 0, 0, 0, 0]
+visibility_timeout_seconds = [30, 30, 30, 30, 30, 30, 30]
+content_based_deduplication = [false, false, false, false, false, false, false]
+deduplication_scope = ["queue", "queue", "queue", "queue", "queue", "queue", "queue"]
